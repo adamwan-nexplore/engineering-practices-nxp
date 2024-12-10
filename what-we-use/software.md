@@ -20,7 +20,6 @@
 - [DBeaver](https://dbeaver.io "https://dbeaver.io")
 - [pgAdmin4](https://https://www.pgadmin.org "https://https://www.pgadmin.org")
 - [Postgres.app](https://postgresapp.com "https://postgresapp.com") (Mac)
-- [Postico](https://eggerapps.at/postico2 "https://eggerapps.at/postico2") (Mac)
 
 ## Editor
 

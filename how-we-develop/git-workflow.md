@@ -5,6 +5,7 @@ Table of Contents
 - [Introduction](#introduction)
 - [Development](#development)
 - [Hotfix](#hotfix)
+- [Infrastructure Change](#infrastructure-change)
 
 ## Introduction
 
@@ -23,8 +24,8 @@ Table of Contents
 title: Branch Transition on Submitting a Feature / Fix
 ---
 flowchart TD
-    develop(dev-deployment)
     feature(feature/XXX)
+    develop(dev-deployment)
     uat(uat-deployment)
     prod(prod-*-deployment)
     start([Start])
@@ -57,8 +58,8 @@ flowchart TD
 title: Branch Transition on Hotfix
 ---
 flowchart TD
-    develop(dev-deployment)
     hotfix(hotfix/XXX)
+    develop(dev-deployment)
     uat(uat-deployment)
     prod(prod-*-deployment)
     start([Start])
@@ -82,6 +83,48 @@ flowchart TD
 
     uat -->|sign-off & merge| prod --> finish
 
+    uat -..->|deploy| uat-env
+    prod -..->|deploy| prod-env
+    develop -..->|deploy| dev-env
+```
+
+## Infrastructure Change
+
+```mermaid
+---
+title: Branch Transition on Changing the infrastructure
+---
+flowchart TD
+    feature(feature/XXX)
+    sandbox(sbx-deployment)
+    develop(dev-deployment)
+    uat(uat-deployment)
+    prod(prod-*-deployment)
+    start([Start])
+    finish([finish])
+
+    sbx-env[SANDBOX ENV]
+    dev-env[DEV ENV]
+    uat-env[UAT ENV]
+    prod-env[PROD ENVs]
+
+    style sandbox stroke:yellow
+    style develop stroke:#f00
+    style uat stroke:#A020F0
+    style prod stroke:#00f
+
+    style sbx-env fill:yellow
+    style dev-env fill:#f00
+    style uat-env fill:#A020F0
+    style prod-env fill:#00f
+
+    start --> feature
+    feature -->|rebase| sandbox
+    sandbox -->|branch out| feature
+    sandbox -->|merge| develop -->|merge| uat -->|sign-off & merge| prod --> finish
+
+
+    sandbox -..->|deploy| sbx-env
     develop -..->|deploy| dev-env
     uat -..->|deploy| uat-env
     prod -..->|deploy| prod-env

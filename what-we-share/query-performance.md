@@ -29,7 +29,7 @@ Table of Contents
 
 ## What will cover
 
-- Purpose
+- Management Models
 
   - OLTP (Online Transaction Processing)
     - store and query the transactions
@@ -209,9 +209,7 @@ Table of Contents
 
 - [Scan Nodes](https://pganalyze.com/docs/explain/scan-nodes "https://pganalyze.com/docs/explain/scan-nodes")
 
-> Advanced Topic(s):
-> [What does "Recheck Cond" in Explain result mean?](https://stackoverflow.com/questions/50959814/what-does-recheck-cond-in-explain-result-mean "https://stackoverflow.com/questions/50959814/what-does-recheck-cond-in-explain-result-mean")
-> ["Recheck Cond:" line in query plans with a bitmap index scan](https://dba.stackexchange.com/questions/106264/recheck-cond-line-in-query-plans-with-a-bitmap-index-scan "https://dba.stackexchange.com/questions/106264/recheck-cond-line-in-query-plans-with-a-bitmap-index-scan")
+> Learn more on `Recheck Cond` [[1]](https://stackoverflow.com/questions/50959814/what-does-recheck-cond-in-explain-result-mean "https://stackoverflow.com/questions/50959814/what-does-recheck-cond-in-explain-result-mean") [[2]](https://dba.stackexchange.com/questions/106264/recheck-cond-line-in-query-plans-with-a-bitmap-index-scan "https://dba.stackexchange.com/questions/106264/recheck-cond-line-in-query-plans-with-a-bitmap-index-scan")
 
 #### The Concept
 
@@ -225,9 +223,7 @@ Table of Contents
   - REQUIREMENT: Postgres Version > 11, not us
 - `GIST & GIN` for JSON data
 
-> Advanced Topic(s):
-> [How is it possible for Hash Index not to be faster than Btree for equality lookups?](https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku "https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku")
-> [POSTGRESQL HASH INDEX PERFORMANCE](https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance "https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance")
+> Learn more on `Hash Index` [[1]](https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku "https://dba.stackexchange.com/questions/212685/how-is-it-possible-for-hash-index-not-to-be-faster-than-btree-for-equality-looku") [[2]](https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance "https://www.cybertec-postgresql.com/en/postgresql-hash-index-performance")
 
 #### Micro-optimization
 

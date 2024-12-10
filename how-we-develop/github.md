@@ -4,6 +4,9 @@ Table of Contents
 
 - [General Recommendation](#general-recommendation)
 - [Pull Request \& Branching](#pull-request--branching)
+- [Category](#category)
+- [Continuous Integration](#continuous-integration)
+- [Access Rights](#access-rights)
 - [Reference](#reference)
 
 ## General Recommendation
@@ -44,7 +47,10 @@ Table of Contents
     - REGEX: `^(promote|back|build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: \[CPCS\-[0-9]+\] ([\w ])+([\s\S]*)`
     - e.g. `feat: [CPCS-1234] add user endpoint`
 6. Set up [auto-link](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources") for tracking back JIRA Tasks
-7. Each repository has a couple of topics (= #hashtag). It provides accurate information of the nature of the codebase
+
+## Category
+
+1. Each repository should have a couple of topics (= #hashtag). It helps filtering and querying repository data by `gh`
 
     | **topic**                 | **meaning**       |
     | ------------------------- | ----------------- |
@@ -56,23 +62,30 @@ Table of Contents
     | #web                      | web               |
     | _topics other than above_ | which product     |
 
-8. Continuous Integration
-    - Pull Request
-      - Code Check
-        - Build Check
-        - (API) Database Schema & Integration Tests
-        - Unit Tests
-      - Style Check
-        - Code Style
-        - Commit Message Format
-      - Auto Pull Request to upstream Environments
-      - Auto Merge to downstream Environments
-    - Daily
-      - Build Check
-      - (API) ERD Update Check
-      - Vulnerability Test
-    - Environment Update
-      - (Web) Smoke Tests
+## Continuous Integration
+
+- Pull Request
+  - Code Check
+    - Build Check
+    - (API) Database Schema & Integration Tests
+    - Unit Tests
+  - Style Check
+    - Code Style
+    - Commit Message Format
+  - Auto Pull Request to upstream Environments
+  - Auto Merge to downstream Environments
+- Daily
+  - Build Check
+  - (API) ERD Update Check
+  - Vulnerability Test
+- Environment Update
+  - (Web) Smoke Tests
+
+## Access Rights
+
+- Manage by Github Teams. Never manage by individual users
+
+- Always have at least two teams `-devops` (owner) and `-developers`
 
 ## Reference
 

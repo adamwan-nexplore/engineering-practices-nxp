@@ -1,6 +1,6 @@
 # The Nature of React <!-- omit in toc -->
 
-## 0. The Objective
+## The Objective
 
 Native Browser
 
@@ -90,6 +90,15 @@ Native Browser
 
   https://2019.wattenberger.com/blog/react-hooks
 
+## Thinking in React
+
+- A recommended approach from React Official to build React App
+- Step 1: Break the UI into a component hierarchy
+- Step 2: Build a static version in React
+- Step 3: Find the minimal but complete representation of UI state
+- Step 4: Identify where your state should live
+- Step 5: Add inverse data flow
+
 ## Gotchas
 
 1. ~~Strange~~ String conversion in JSX - `(empty string)`, `false`, `null`, `undefined` will render as `(empty string)`, while 0 renders as `0`
@@ -111,8 +120,13 @@ render (
 
 - props of primitive data vs component
 
+## Recommended Reading
+
+- [React Quickly, 2nd Edition](https://www.manning.com/books/react-quickly-second-edition "https://www.manning.com/books/react-quickly-second-edition")
+- [React in Depth](https://www.manning.com/books/react-in-depth "https://www.manning.com/books/react-in-depth")
+- [Advanced React](https://www.manning.com/books/react-in-depth "https://www.manning.com/books/react-in-depth")
+- [Advanced React Course](https://www.youtube.com/playlist?list=PL6dw1BPCcLC4n-4o-t1kQZH0NJeZtpmGp "https://www.youtube.com/playlist?list=PL6dw1BPCcLC4n-4o-t1kQZH0NJeZtpmGp")
+
 ## Reference
 
-- https://www.youtube.com/playlist?list=PL6dw1BPCcLC4n-4o-t1kQZH0NJeZtpmGp
-
-- Make sure your component is as small as possible (if with UI state)
+- [React Official Website](https://react.dev "https://react.dev")
