@@ -433,13 +433,11 @@ Mobile
     "yzhang.markdown-all-in-one",
   ]
 }
-
 ```
 
 ## Reference
 
 - [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview "https://code.visualstudio.com/docs/copilot/overview")
 - [Getting started with GitHub Copilot](https://github.com/features/copilot/getting-started "https://github.com/features/copilot/getting-started")
-- [Learn AI-Assisted Python Programming](https://www.manning.com/books/learn-ai-assisted-python-programming "https://www.manning.com/books/learn-ai-assisted-python-programming")
 - [Top 5 Serious Time Savers in VS Code](https://www.youtube.com/watch?v=MLvLiWueESY "https://www.youtube.com/watch?v=MLvLiWueESY*")
 - [How I Set Up VS Code](https://www.youtube.com/watch?v=85q9FTdVyJs "https://www.youtube.com/watch?v=85q9FTdVyJs")
